@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Problem_4 : MonoBehaviour
-{
+{   
+    
     //Connect this Script to Game Object Named Part_4,get the Transfom component
     //of Part_4, Part_4_Child using either transform.Get or transform.Find and the
     //transfrom of Part_4_GameObject using GameObject.Find
@@ -12,6 +13,13 @@ public class Problem_4 : MonoBehaviour
     //You should have the results of Part_4, 0,0,0, Part_4_Child -5,-5,-5 and Part_4_GameObject, 5,5,5
     void Start()
     {
+       var _transform = GetComponent<Transform>();
+        PrintOutNameAndPosition(_transform.name, _transform.position);
+        var childtransform = transform.GetChild(0);
+        PrintOutNameAndPosition(childtransform.name, childtransform.position);
+        var gameobject = GameObject.Find("Part_4_GameObject").GetComponent<Transform>();
+        PrintOutNameAndPosition(gameobject.name, gameobject.position);
+
 
     }
 
