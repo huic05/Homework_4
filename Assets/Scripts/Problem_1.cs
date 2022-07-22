@@ -14,7 +14,10 @@ public class Problem_1 : MonoBehaviour
     //Part 1: 
     //Create a function called Perimeter that takes in two parameters of int length and int width
     //Calculate the perimeter of the box and return the value as an int.
+    public void Perimeter(int length, int width)
+    {
 
+    }
 
     //Part 2: 
     //Overload the function by creating a float version of the same function 
